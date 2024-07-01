@@ -20,4 +20,8 @@ public class Order {
         this.id = id;
         this.status = status;
     }
+
+    public Order(OrderStatus status) {
+        this.status = status;
+    }
 }
