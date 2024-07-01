@@ -1,4 +1,4 @@
-package br.com.avanade.order.order_service.core.model;
+package br.com.avanade.order.order_service.core.domain;
 
 public class Order {
     private String id;
