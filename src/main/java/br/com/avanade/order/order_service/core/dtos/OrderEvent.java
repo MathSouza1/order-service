@@ -21,4 +21,8 @@ public class OrderEvent {
         this.message = "um novo pedido foi efetuado.";
         this.orderId = orderId;
     }
+
+    public OrderEvent() {
+
+    }
 }
