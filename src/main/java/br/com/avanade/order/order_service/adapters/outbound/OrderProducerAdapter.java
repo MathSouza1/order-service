@@ -1,4 +1,4 @@
-package br.com.avanade.order.order_service.adapters.outbound.adapters;
+package br.com.avanade.order.order_service.adapters.outbound;
 
 import br.com.avanade.order.order_service.adapters.outbound.services.OrderProducer;
 import br.com.avanade.order.order_service.core.dtos.OrderEvent;
