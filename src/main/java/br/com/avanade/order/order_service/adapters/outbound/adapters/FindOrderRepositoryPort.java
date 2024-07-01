@@ -4,17 +4,16 @@ import br.com.avanade.order.order_service.adapters.outbound.entities.OrderEntity
 import br.com.avanade.order.order_service.adapters.outbound.repositories.OrderRepository;
 import br.com.avanade.order.order_service.core.domain.Order;
 import br.com.avanade.order.order_service.core.exceptions.OrderNotFoundException;
-import br.com.avanade.order.order_service.core.ports.outbound.FindOrderRepositoryPort;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
 @Component
-public class FindOrderRepositoryAdapter implements FindOrderRepositoryPort {
+public class FindOrderRepositoryPort implements br.com.avanade.order.order_service.core.ports.outbound.FindOrderRepositoryPort {
 
     private final OrderRepository orderRepository;
 
-    public FindOrderRepositoryAdapter(OrderRepository orderRepository) {
+    public FindOrderRepositoryPort(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
     }
 
