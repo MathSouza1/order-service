@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CreateOrderRepositoryAdapter implements CreateOrderRepositoryPort {
+
     private final OrderRepository orderRepository;
 
 
