@@ -1,6 +1,7 @@
 package br.com.avanade.order.order_service.adapters.inbound;
 
 import br.com.avanade.order.order_service.core.domain.Order;
+import br.com.avanade.order.order_service.core.exceptions.OrderNotFoundException;
 import br.com.avanade.order.order_service.core.ports.inbound.CreateOrderPort;
 import br.com.avanade.order.order_service.core.ports.inbound.FindOrderByIdPort;
 import org.springframework.http.ResponseEntity;
@@ -26,7 +27,7 @@ public class OrderController {
     }
 
     @GetMapping("/{orderId}")
-    public ResponseEntity<Order> findOrderById(@PathVariable String orderId) {
+    public ResponseEntity<Order> findOrderById(@PathVariable String orderId) throws OrderNotFoundException {
         return ResponseEntity.ok().body(findById.execute(orderId));
     }
 }
