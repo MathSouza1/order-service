@@ -1,4 +1,4 @@
-package br.com.avanade.order.order_service.adapters.outbound;
+package br.com.avanade.order.order_service.adapters.outbound.adapters;
 
 import br.com.avanade.order.order_service.adapters.outbound.entities.OrderEntity;
 import br.com.avanade.order.order_service.adapters.outbound.repositories.OrderRepository;
