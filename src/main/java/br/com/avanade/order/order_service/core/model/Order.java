@@ -1,6 +1,4 @@
-package br.com.avanade.order.order_service.core.domain;
-
-import br.com.avanade.order.order_service.infraestructure.OrderStatus;
+package br.com.avanade.order.order_service.core.model;
 
 public class Order {
     private String id;
