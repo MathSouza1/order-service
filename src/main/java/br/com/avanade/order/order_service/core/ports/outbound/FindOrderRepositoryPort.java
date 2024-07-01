@@ -2,7 +2,7 @@ package br.com.avanade.order.order_service.core.ports.outbound;
 
 import br.com.avanade.order.order_service.core.domain.Order;
 
-public interface FindOrderByIdAdapter {
+public interface FindOrderRepositoryPort {
 
     Order execute(String orderId);
 }
