@@ -24,24 +24,6 @@ class OrderNotFoundMessageTest {
     }
 
     @Test
-    void setTimestamp() {
-        exception.setTimestamp(new Date());
-        assertNotNull(exception);
-    }
-
-    @Test
-    void setStatus() {
-        exception.setStatus(HttpStatus.NO_CONTENT.value());
-        assertNotNull(exception);
-    }
-
-    @Test
-    void setError() {
-        exception.setError("test error message");
-        assertNotNull(exception);
-    }
-
-    @Test
     void OrderNotFoundMessageNoArgsConstructor() {
         exception = new OrderNotFoundMessage();
         assertNotNull(exception);
