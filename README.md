@@ -1,12 +1,13 @@
 ## Desafio
 
-Construir uma pequena aplicação de acordo com os seguintes requisitos:
 Stack a ser utilizada:
 - Spring Boot
 - Apache Kafka
 - MongoDB
 - Java 17
 - Maven
+
+Construir uma pequena aplicação de acordo com os seguintes requisitos:
 
 Para a construção do Microsserviço deve ser utilizada a arquitetura Hexagonal.
 
@@ -23,10 +24,10 @@ Deve existir um consumidor para esse tópico Kafka que seja capaz de ler os dado
 Ao consultar o pedido através do endpoint de consulta, ele deve retornar o pedido com o status devidamente atualizado.
 
 Para fins de simplificação tanto o producer quanto o consumer podem ser implementados em um único Microsserviço.
+###
+Como bônus este projeto oferece uma cobertura de código de 100%.
 
-
-Esse projeto foi feito para explicar melhor sobre a arquitetura Hexagonal, podendo ter sido feito com qualquer outra linguagem ou framework.
-
+Tendo sido utilizado o Junit5 e o Mockito para realizar tal feito.
 ## Para subir a aplicação
 
 Suba os componentes do Docker, utilizando o seguinte comando:
