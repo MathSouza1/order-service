@@ -4,8 +4,8 @@ import br.com.avanade.order.order_service.core.domain.Order;
 import br.com.avanade.order.order_service.core.domain.OrderStatus;
 import br.com.avanade.order.order_service.core.dtos.OrderEvent;
 import br.com.avanade.order.order_service.core.ports.inbound.CreateOrderPort;
-import br.com.avanade.order.order_service.core.ports.outbound.SaveOrderRepositoryPort;
 import br.com.avanade.order.order_service.core.ports.outbound.OrderProducerPort;
+import br.com.avanade.order.order_service.core.ports.outbound.SaveOrderRepositoryPort;
 
 public class CreateOrderService implements CreateOrderPort {
 
