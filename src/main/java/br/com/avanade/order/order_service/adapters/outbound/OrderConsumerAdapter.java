@@ -11,10 +11,9 @@ import org.springframework.stereotype.Component;
 public class OrderConsumerAdapter implements OrderConsumerPort {
 
     private final SaveOrderRepositoryPort orderRepositoryPort;
-    private final FindOrderRepositoryPort repositoryAdapter;
+    private final FindOrderRepositoryAdapter repositoryAdapter;
 
-
-    public OrderConsumerAdapter(SaveOrderRepositoryPort orderRepositoryPort, FindOrderRepositoryPort repositoryAdapter) {
+    public OrderConsumerAdapter(SaveOrderRepositoryPort orderRepositoryPort, FindOrderRepositoryAdapter repositoryAdapter) {
         this.orderRepositoryPort = orderRepositoryPort;
         this.repositoryAdapter = repositoryAdapter;
     }
