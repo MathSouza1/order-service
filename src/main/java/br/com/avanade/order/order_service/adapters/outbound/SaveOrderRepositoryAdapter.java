@@ -11,7 +11,6 @@ public class SaveOrderRepositoryAdapter implements SaveOrderRepositoryPort {
 
     private final OrderRepository orderRepository;
 
-
     public SaveOrderRepositoryAdapter(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
     }
