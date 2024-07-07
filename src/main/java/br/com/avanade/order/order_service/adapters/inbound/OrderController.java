@@ -5,7 +5,6 @@ import br.com.avanade.order.order_service.core.exceptions.OrderNotFoundException
 import br.com.avanade.order.order_service.core.ports.inbound.CreateOrderPort;
 import br.com.avanade.order.order_service.core.ports.inbound.FindOrderByIdPort;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
