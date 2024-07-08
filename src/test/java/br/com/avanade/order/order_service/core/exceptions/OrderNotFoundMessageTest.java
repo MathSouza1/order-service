@@ -34,4 +34,20 @@ class OrderNotFoundMessageTest {
         exception = new OrderNotFoundMessage(new Date(), HttpStatus.NO_CONTENT.value(), "test error message");
         assertNotNull(exception);
     }
+
+    @Test
+    void OrderNotFoundMessageAllGetters() {
+        exception.getTimestamp();
+        exception.getStatus();
+        exception.getError();
+        assertNotNull(exception);
+    }
+
+    @Test
+    void OrderNotFoundMessageAllSetters() {
+        exception.setTimestamp(new Date());
+        exception.setStatus(404);
+        exception.setError("Error Test");
+        assertNotNull(exception);
+    }
 }
